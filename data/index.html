@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startadressen Festlegen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #202020;
+            color: white;
+        }
+        input, button {
+            margin: 5px;
+        }
+        input {
+            background-color: #202020;
+            border-color: #606060;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 3px;
+            height: 20px;
+            width: 50px;
+            color: white;
+        }
+        table {
+            text-align: left;
+        }
+        button {
+            background-color: #606060;
+            border-color: #606060;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body onload="werteErmitteln()">
+
+    <h1>Startadressen Festlegen</h1>
+    <table>
+        <tr>
+            <th>Knopf Links</th>
+            <td ><input type="tel" id="Startadresse1_0" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_1" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_2" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_3" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_4" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_5" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_6" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_7" min="1" max="512"></td>
+            <td ><input type="tel" id="Startadresse1_8" min="1" max="512"></td>     
+            <td ><input type="tel" id="Startadresse1_9" min="1" max="512"></td>       
+        </tr>
+        <tr>
+            <th>Werte</th>
+            <td><input type="tel" id="chanwert1_0" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_1" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_2" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_3" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_4" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_5" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_6" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_7" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_8" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert1_9" min="1" max="255"></td>
+        </tr>
+        <tr>
+            <th>
+                
+            </th>
+        </tr>
+        <tr>
+            <th>Knopf Rechts</th>
+            <td><input type="tel" id="Startadresse2_0" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_1" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_2" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_3" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_4" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_5" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_6" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_7" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_8" min="1" max="512"></td>
+            <td><input type="tel" id="Startadresse2_9" min="1" max="512"></td>
+        </tr>
+        <tr>
+            <th>Werte</th>
+            <td><input type="tel" id="chanwert2_0" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_1" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_2" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_3" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_4" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_5" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_6" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_7" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_8" min="1" max="255"></td>
+            <td><input type="tel" id="chanwert2_9" min="1" max="255"></td>
+        </tr>
+    </table> 
+    <button onclick="werteFestlegen()">Festlegen</button>
+
+    <script>
+        function werteFestlegen() {
+            const wert1_0 = document.getElementById('Startadresse1_0').value;
+            const wert1_1 = document.getElementById('Startadresse1_1').value;
+            const wert1_2 = document.getElementById('Startadresse1_2').value;
+            const wert1_3 = document.getElementById('Startadresse1_3').value;
+            const wert1_4 = document.getElementById('Startadresse1_4').value;
+            const wert1_5 = document.getElementById('Startadresse1_5').value;
+            const wert1_6 = document.getElementById('Startadresse1_6').value;
+            const wert1_7 = document.getElementById('Startadresse1_7').value;
+            const wert1_8 = document.getElementById('Startadresse1_8').value;  
+            const wert1_9 = document.getElementById('Startadresse1_9').value;
+            const wert2_0 = document.getElementById('Startadresse2_0').value;
+            const wert2_1 = document.getElementById('Startadresse2_1').value;
+            const wert2_2 = document.getElementById('Startadresse2_2').value;
+            const wert2_3 = document.getElementById('Startadresse2_3').value;
+            const wert2_4 = document.getElementById('Startadresse2_4').value;
+            const wert2_5 = document.getElementById('Startadresse2_5').value;
+            const wert2_6 = document.getElementById('Startadresse2_6').value;
+            const wert2_7 = document.getElementById('Startadresse2_7').value;
+            const wert2_8 = document.getElementById('Startadresse2_8').value;
+            const wert2_9 = document.getElementById('Startadresse2_9').value;
+
+            const chanwert1_0 = document.getElementById('chanwert1_0').value;
+            const chanwert1_1 = document.getElementById('chanwert1_1').value;
+            const chanwert1_2 = document.getElementById('chanwert1_2').value;
+            const chanwert1_3 = document.getElementById('chanwert1_3').value;
+            const chanwert1_4 = document.getElementById('chanwert1_4').value;
+            const chanwert1_5 = document.getElementById('chanwert1_5').value;
+            const chanwert1_6 = document.getElementById('chanwert1_6').value;
+            const chanwert1_7 = document.getElementById('chanwert1_7').value;
+            const chanwert1_8 = document.getElementById('chanwert1_8').value;
+            const chanwert1_9 = document.getElementById('chanwert1_9').value;
+            const chanwert2_0 = document.getElementById('chanwert2_0').value;
+            const chanwert2_1 = document.getElementById('chanwert2_1').value;
+            const chanwert2_2 = document.getElementById('chanwert2_2').value;
+            const chanwert2_3 = document.getElementById('chanwert2_3').value;
+            const chanwert2_4 = document.getElementById('chanwert2_4').value;
+            const chanwert2_5 = document.getElementById('chanwert2_5').value;
+            const chanwert2_6 = document.getElementById('chanwert2_6').value;
+            const chanwert2_7 = document.getElementById('chanwert2_7').value;
+            const chanwert2_8 = document.getElementById('chanwert2_8').value;
+            const chanwert2_9 = document.getElementById('chanwert2_9').value;
+
+
+            if (wert1_0 < 1 || wert1_0 > 512 || wert2_0 < 1 || wert2_0 > 512 || wert1_1 < 1 || wert1_1 > 512 || wert2_1 < 1 || wert2_1 > 512 || wert1_2 < 1 || wert1_2 > 512 || wert2_2 < 1 || wert2_2 > 512 || wert1_3 < 1 || wert1_3 > 512 || wert2_3 < 1 || wert2_3 > 512 || wert1_4 < 1 || wert1_4 > 512 || wert2_4 < 1 || wert2_4 > 512 || wert1_5 < 1 || wert1_5 > 512 || wert2_5 < 1 || wert2_5 > 512 || wert1_6 < 1 || wert1_6 > 512 || wert2_6 < 1 || wert2_6 > 512 || wert1_7 < 1 || wert1_7 > 512 || wert2_7 < 1 || wert2_7 > 512 || wert1_8 < 1 || wert1_8 > 512 || wert2_8 < 1 || wert2_8 > 512 || wert1_9 < 1 || wert1_9 > 512 || wert2_9 < 1 || wert2_9 > 512) {
+                alert("Bitte Werte zwischen 1 und 512 eingeben.");
+                return;
+            }
+
+            if (chanwert1_0 < 1 || chanwert1_0 > 255 || chanwert2_0 < 1 || chanwert2_0 > 255 || chanwert1_1 < 1 || chanwert1_1 > 255 || chanwert2_1 < 1 || chanwert2_1 > 255 || chanwert1_2 < 1 || chanwert1_2 > 255 || chanwert2_2 < 1 || chanwert2_2 > 255 || chanwert1_3 < 1 || chanwert1_3 > 255 || chanwert2_3 < 1 || chanwert2_3 > 255 || chanwert1_4 < 1 || chanwert1_4 > 255 || chanwert2_4 < 1 || chanwert2_4 > 255 || chanwert1_5 < 1 || chanwert1_5 > 255 || chanwert2_5 < 1 || chanwert2_5 > 255 || chanwert1_6 < 1 || chanwert1_6 > 255 || chanwert2_6 < 1 || chanwert2_6 > 255 || chanwert1_7 < 1 || chanwert1_7 > 255 || chanwert2_7 < 1 || chanwert2_7 > 255 || chanwert1_8 < 1 || chanwert1_8 > 255 || chanwert2_8 < 1 || chanwert2_8 > 255 || chanwert1_9 < 1 || chanwert1_9 > 255 || chanwert2_9 < 1 || chanwert2_9 > 255) {
+                alert("Bitte Werte zwischen 1 und 255 eingeben.");
+                return;
+            }
+
+            // Get anfrage mit den werten als parameter an den server schicken
+            fetch(`/werte_setzen?startadresse1_0=${wert1_0}&startadresse2_0=${wert2_0}&startadresse1_1=${wert1_1}&startadresse2_1=${wert2_1}&startadresse1_2=${wert1_2}&startadresse2_2=${wert2_2}&startadresse1_3=${wert1_3}&startadresse2_3=${wert2_3}&startadresse1_4=${wert1_4}&startadresse2_4=${wert2_4}&startadresse1_5=${wert1_5}&startadresse2_5=${wert2_5}&startadresse1_6=${wert1_6}&startadresse2_6=${wert2_6}&startadresse1_7=${wert1_7}&startadresse2_7=${wert2_7}&startadresse1_8=${wert1_8}&startadresse2_8=${wert2_8}&startadresse1_9=${wert1_9}&startadresse2_9=${wert2_9}&chanwert1_0=${chanwert1_0}&chanwert2_0=${chanwert2_0}&chanwert1_1=${chanwert1_1}&chanwert2_1=${chanwert2_1}&chanwert1_2=${chanwert1_2}&chanwert2_2=${chanwert2_2}&chanwert1_3=${chanwert1_3}&chanwert2_3=${chanwert2_3}&chanwert1_4=${chanwert1_4}&chanwert2_4=${chanwert2_4}&chanwert1_5=${chanwert1_5}&chanwert2_5=${chanwert2_5}&chanwert1_6=${chanwert1_6}&chanwert2_6=${chanwert2_6}&chanwert1_7=${chanwert1_7}&chanwert2_7=${chanwert2_7}&chanwert1_8=${chanwert1_8}&chanwert2_8=${chanwert2_8}&chanwert1_9=${chanwert1_9}&chanwert2_9=${chanwert2_9}`)
+                .then(response => {
+                    if (response.ok) {
+                        alert("Werte erfolgreich festgelegt.");
+                    } else {
+                        alert("Fehler beim Festlegen der Werte.");
+                    }
+                });
+        }
+
+        function werteErmitteln() {
+            fetch('/werte_bekommen')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('Startadresse1_0').value = data.startadresse1_0;
+                    document.getElementById('Startadresse1_1').value = data.startadresse1_1;
+                    document.getElementById('Startadresse1_2').value = data.startadresse1_2;
+                    document.getElementById('Startadresse1_3').value = data.startadresse1_3;
+                    document.getElementById('Startadresse1_4').value = data.startadresse1_4;
+                    document.getElementById('Startadresse1_5').value = data.startadresse1_5;
+                    document.getElementById('Startadresse1_6').value = data.startadresse1_6;
+                    document.getElementById('Startadresse1_7').value = data.startadresse1_7;
+                    document.getElementById('Startadresse1_8').value = data.startadresse1_8;
+                    document.getElementById('Startadresse1_9').value = data.startadresse1_9;
+                    document.getElementById('Startadresse2_0').value = data.startadresse2_0;
+                    document.getElementById('Startadresse2_1').value = data.startadresse2_1;
+                    document.getElementById('Startadresse2_2').value = data.startadresse2_2;
+                    document.getElementById('Startadresse2_3').value = data.startadresse2_3;
+                    document.getElementById('Startadresse2_4').value = data.startadresse2_4;
+                    document.getElementById('Startadresse2_5').value = data.startadresse2_5;
+                    document.getElementById('Startadresse2_6').value = data.startadresse2_6;
+                    document.getElementById('Startadresse2_7').value = data.startadresse2_7;
+                    document.getElementById('Startadresse2_8').value = data.startadresse2_8;
+                    document.getElementById('Startadresse2_9').value = data.startadresse2_9;  
+                    document.getElementById('chanwert1_0').value = data.chanwert1_0;
+                    document.getElementById('chanwert1_1').value = data.chanwert1_1;
+                    document.getElementById('chanwert1_2').value = data.chanwert1_2;
+                    document.getElementById('chanwert1_3').value = data.chanwert1_3;
+                    document.getElementById('chanwert1_4').value = data.chanwert1_4;
+                    document.getElementById('chanwert1_5').value = data.chanwert1_5;
+                    document.getElementById('chanwert1_6').value = data.chanwert1_6;
+                    document.getElementById('chanwert1_7').value = data.chanwert1_7;
+                    document.getElementById('chanwert1_8').value = data.chanwert1_8;
+                    document.getElementById('chanwert1_9').value = data.chanwert1_9;
+                    document.getElementById('chanwert2_0').value = data.chanwert2_0;
+                    document.getElementById('chanwert2_1').value = data.chanwert2_1;
+                    document.getElementById('chanwert2_2').value = data.chanwert2_2;
+                    document.getElementById('chanwert2_3').value = data.chanwert2_3;
+                    document.getElementById('chanwert2_4').value = data.chanwert2_4;
+                    document.getElementById('chanwert2_5').value = data.chanwert2_5;
+                    document.getElementById('chanwert2_6').value = data.chanwert2_6;
+                    document.getElementById('chanwert2_7').value = data.chanwert2_7;
+                    document.getElementById('chanwert2_8').value = data.chanwert2_8;
+                    document.getElementById('chanwert2_9').value = data.chanwert2_9;                 
+                });
+        }
+    </script>
+
+</body>
+</html>
